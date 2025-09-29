@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "location_factors_dashboard"
+version = "0.1.0"
+description = "Dashboard of location factors analysis"
+authors = ["Cristian Vergara"]
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/cristianvergaraf/location_factors_dashboard"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.26"
+pandas = "^2.0"
+numpy = "^1.25"
+matplotlib = "^3.8"
+seaborn = "^0.12"
+plotly = "^5.21"
+pydeck = "^0.8"
+folium = "^0.14"
+scikit-learn = "^1.3"
+joblib = "^1.3"
+rasterio = "^1.3"
+geopandas = "^1.3"
+
+[tool.poetry.dev-dependencies]
+black = "^24.0"           # formateador de código
+isort = "^6.0"            # organizar imports
+flake8 = "^6.0"           # linter
+pytest = "^8.0"           # testing framework
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
