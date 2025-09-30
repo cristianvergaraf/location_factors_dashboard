@@ -5,24 +5,26 @@ import plotly.graph_objects as go
 import streamlit as st
 
     
-def interactive_scatter(df,x_axis,y_axis, metric):
+def interactive_scatter(df,x_axis,y_axis):
     # Custom color palette
-    custom_palette = ["red", "green", "blue", "black", "gray"]
+   # custom_palette = ["red", "green", "blue", "black", "gray"]
 
     # Ensure categorical
-    df[metric] = df[metric].astype(str)
+    hover_columns = ["model_id","variables"]
+
 
     # Create the scatter plot
     scatter_fig = px.scatter(
         data_frame=df,
         x=x_axis,
         y=y_axis,
-        color = metric,
-        color_discrete_map={value: color for value, color in zip(df[metric].unique(), custom_palette)},
+        #color = metric,
+        #color_discrete_map={value: color for value, color in zip(df[metric].unique(), custom_palette)},
         labels={'variable': ' ', 'value': 'Factor value'},
         title='Fig 1. Media de cada variable para cada cluster',
         width=1000,
-        height=500
+        height=500,
+        hover_data = hover_columns
     )
 
     # Config for toolbar
