@@ -1,12 +1,14 @@
 Location Factors Dashboard
-Variable Importance Visualization for Spatial Models
+Relative importance of location factors in the Lingue basin in south central Chile.
+
 🚀 Overview
 
-This project provides an interactive visualization dashboard designed to assess the relative importance and spatial distribution of variables derived from spatial models.
+This project provides an interactive visualization dashboard designed to visualize the results of the relative importance analysis of variables spatial variables for the expansion forest plantation in the Lingue basin of South-Central Chile. 
 
-In spatial analysis, understanding which factors (or "location factors") significantly influence the model output is crucial. This dashboard helps researchers, urban planners, and data scientists gain visual insights into how individual variables contribute to the model's prediction across a geographic area, thereby validating and interpreting complex spatial processes.
+In spatial analysis, understanding which location factors significantly influence the spatial pattern of the expansion of forest plantation. This dashboard helps to undestand spatial validation of models used to predicted or understand spatial phenomenon. 
 
 The core objective is to translate complex model output into an accessible, intuitive visual format.
+
 ✨ Features
 
 The feat/dashboard-visualization branch currently focuses on establishing the core visual and interactive components:
