@@ -19,6 +19,7 @@ dist/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 notebook_test/
+notebook/
 .ipynb
 # VS Code settings
 .vscode/
