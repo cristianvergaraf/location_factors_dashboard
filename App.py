@@ -1,28 +1,22 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Location Factors Dashboard",
+    page_title="Dashboard",
     page_icon="👋",
 )
 
-st.write("# Welcome to Streamlit! 👋")
-
-st.sidebar.success("Select a demo above.")
+st.write("# Welcome to locations factors dashboard ! 👋")
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
+    This dashboard shows the results of tha analysis of location factors of forest plantations in the Lingue basin 
+    in south-central Chile. The analysis was perfomed using a multimodel inference approach (Burnham and Anderson, 2004) implemented using the 
+    glmulti package in R, to compute all the possible models with 10 variables, 1024 models in total. Then, spatial predictions where 
+    perfomed using Terra package using the predict functions. Metrics of model fitness as AIC, AUC,
+    and spatial predictions were calculated, including AUC, TOC, FOM.
+
+    - Checkout the repository of the projects in github [documentation](https://github.com/cristianvergaraf/location_factors)
+
+    """ 
+       
 )

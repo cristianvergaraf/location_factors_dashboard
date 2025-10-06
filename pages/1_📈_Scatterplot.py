@@ -54,10 +54,9 @@ if 'x_variable_plot1' not in st.session_state:
 if 'y_variable_plot1' not in st.session_state:
     st.session_state['y_variable_plot1'] = y_variable_plot1
 
-if st.button("Update session state"):
+if st.button("Update models in the filtered data"):
     st.session_state['x_variable_plot1'] = x_variable_plot1
     st.session_state['y_variable_plot1'] = y_variable_plot1
-
 
 
 interactive_scatter(data,st.session_state['x_variable_plot1'],st.session_state['y_variable_plot1'], key = "original_plot")
